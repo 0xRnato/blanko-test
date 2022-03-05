@@ -1,0 +1,8 @@
+require('dotenv').config(); // eslint-disable-line @typescript-eslint/no-var-requires
+const path = require('path');
+
+module.exports = {
+  'seeders-path': path.resolve('./database', 'seeders'),
+  'migrations-path': path.resolve('./database', 'migrations'),
+  config: path.resolve('./database', 'config.js'),
+};
